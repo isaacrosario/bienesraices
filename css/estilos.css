@@ -23,6 +23,7 @@ body{
 
 /*Globales*/
 .contenedor{
+	width: 95%;
 max-width: 120rem;
 margin:0 auto;
 }
@@ -59,7 +60,15 @@ margin-top: 3rem;
 display: inline-block;
 text-align: center;
 border: none;
+display: block;
+flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+	.boton{
 
+		display: inline-block;
+		flex: 0 0 100%;
+	}
 }
 .boton:hover{
 	cursor:alias;
@@ -89,6 +98,13 @@ padding:1rem 0 3rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.contenido-header{
+
+		text-align: left;
+	}
 }
 .contenido-header h1{
 color:#ffffff;
@@ -97,36 +113,56 @@ max-width: 60rem;
 line-height: 2;
 }
 .barra{
-	display:flex;
-	justify-content:space-between;
-	padding-top: 3rem;
-	align-items:flex-center;
+	padding-top: 3rem;	
 }
-
+@media (min-width: 768px) {
+	.barra{
+	display:flex;
+	justify-content:space-between;	
+	align-items:flex-center;
+	}
+}
 .navegacion a{
 
 color:white;
 text-decoration: none;
-font-size: 1.8rem;
-margin-right: 2rem;
+font-size: 2.2rem;
+display: block;
 }
-
+@media (min-width: 768px) {
+	.navegacion a{
+		display: inline-block;
+		margin-right: 2rem;
+		font-size: 1.8rem;
+	}
+	
 .navegacion a:last-of-type{
 	margin: 0;
+	}
 }
+	
 .navegacion a:hover{
 
 	color:#71B100;
 }
 
 /** Iconos-nosotros  **/
-.iconos-nosotros{
-	display: flex; 
-	justify-content:  space-between;
+@media (min-width: 768px) {
+	.iconos-nosotros{
+		display: flex; 
+		justify-content:  space-between;
+	}	
 }
+
+
 .icono{
-flex-basis: (33.3% -1rem);
-text-align:center;
+
+	text-align: center;
+	}
+@media (min-width: 768px) {
+	.icono{
+	flex-basis: (33.3% - 1rem);	
+	}
 }
 .icono h3{
 
